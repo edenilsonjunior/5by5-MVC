@@ -1,6 +1,5 @@
 ﻿using Controllers;
 using Models;
-using System.Runtime.InteropServices;
 
 namespace MVC
 {
@@ -131,7 +130,7 @@ namespace MVC
             return LerInt("Digite sua resposta:");
         }
 
-        public static int LerInt(string titulo)
+        static int LerInt(string titulo)
         {
             int resposta;
 
@@ -152,7 +151,7 @@ namespace MVC
             return resposta;
         }
 
-        public static string LerString(string titulo)
+        static string LerString(string titulo)
         {
             Console.WriteLine(titulo);
             Console.Write("R: ");

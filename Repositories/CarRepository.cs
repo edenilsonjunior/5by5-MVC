@@ -1,8 +1,6 @@
 ﻿using Microsoft.Data.SqlClient;
 using Models;
-using System.Collections.Generic;
 using System.Data;
-using System.Text;
 
 namespace Repositories
 {
@@ -27,6 +25,7 @@ namespace Repositories
                     new SqlParameter("@name", car.Name),
                     new SqlParameter("@color", car.Color),
                     new SqlParameter("@year", car.Year),
+                    new SqlParameter("@insurance_id", car.Insurance.Id),
                 }
             };
 
